@@ -1,7 +1,7 @@
 package com.saucedemo.pages;
 
+import com.base.BasePage;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 
 public class LoginPage extends BasePage {
     private By usernameField = By.id("user-name");
