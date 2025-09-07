@@ -1,7 +1,5 @@
 package com.demoqa.pages.forms;
-
 import org.openqa.selenium.By;
-
 import static utilities.JavaScriptUtility.clickJS;
 import static utilities.JavaScriptUtility.scrollToElementJS;
 
