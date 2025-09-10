@@ -1,4 +1,5 @@
 package com.demoqa.pages;
+import com.demoqa.pages.AlertsFrameWindows.AlertsFrameWindowsPage;
 import com.demoqa.pages.elements.ElementsPage;
 import com.demoqa.pages.forms.FormsPage;
 import com.base.BasePage;
@@ -12,6 +13,7 @@ public class HomePage extends BasePage {
     private By formsCard = By.xpath("//div[@id='app'] //h5[text()='Forms']");
     private By elementsCard = By.xpath("//div[@id='app'] //h5[text()='Elements']");
     private By widgetsCard = By.xpath("//div[@id='app'] //h5[text()='Widgets']");
+    private By alertsFrameWindowsCard = By.xpath("//div[@id='app'] //h5[text()='Alerts, Frame & Windows']");
 
 
     public FormsPage goToForms(){
@@ -29,5 +31,11 @@ public class HomePage extends BasePage {
         scrollToElementJS(widgetsCard);
         click(widgetsCard);
         return new WidgetsPage();
+    }
+
+    public AlertsFrameWindowsPage goToAlertsFrameWidnows(){
+        scrollToElementJS(alertsFrameWindowsCard);
+        click(alertsFrameWindowsCard);
+        return new AlertsFrameWindowsPage();
     }
 }
