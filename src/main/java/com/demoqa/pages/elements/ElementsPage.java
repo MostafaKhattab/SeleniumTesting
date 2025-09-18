@@ -9,6 +9,7 @@ public class ElementsPage extends BasePage {
 
     private By webTablesMenuItem = By.xpath("//li[@id='item-3']/span[text()='Web Tables']");
     private By linksItem = By.xpath("//li[@id='item-5']/span[text()='Links']");
+    private By dynamicPropertiesItem = By.xpath("//li[@id='item-8']/span[text()='Dynamic Properties']");
 
     public WebtablesPage clickWebTables (){
         scrollToElementJS(webTablesMenuItem);
@@ -20,6 +21,12 @@ public class ElementsPage extends BasePage {
         scrollToElementJS(linksItem);
         click(linksItem);
         return new LinksPage();
+    }
+
+    public DynamicPropertiesPage clickDynamicProperties (){
+        scrollToElementJS(dynamicPropertiesItem);
+        click(dynamicPropertiesItem);
+        return new DynamicPropertiesPage();
     }
 
 }
