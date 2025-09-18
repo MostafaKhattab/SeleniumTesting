@@ -14,7 +14,6 @@ public class WaitUtility extends Utility{
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(seconds));
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
-
     public static void fluentWaitUntilVisible(int seconds,By locator){
         FluentWait wait = new FluentWait(driver)
                 .withTimeout(Duration.ofSeconds(seconds))
